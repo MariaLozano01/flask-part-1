@@ -5,10 +5,13 @@
 ## 4. 'ls' shows what is present in the folder
 
 ## 'sudo python3 app.py' --> to deploy our application 
+## sudo lsof -t -i:80 --> to check if something is running on a port
+## sudo kill -9 $(sudo lsof -t -i:80) --> to quit what is active currently
 
 from flask import Flask
 
 app = Flask(__name__)
+app.debug = True
 
 @app.route('/')
 def hello_world():
