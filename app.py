@@ -11,7 +11,6 @@
 from flask import Flask
 
 app = Flask(__name__)
-app.debug = True
 
 @app.route('/')
 def hello_world():
@@ -25,7 +24,6 @@ def secondtab():
 def thirdtab():
     return 'This is the third tab of my assignment'
 
-app.run()
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=80) 
 
