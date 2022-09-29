@@ -25,7 +25,7 @@ def thirdtab():
     return 'This is the third tab of my assignment'
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=80) 
+    app.run(debug=True, host='0.0.0.0', port=80)
 
 ##sudo apt-get update --> to update the terminal we're working in
 ##Sudo apt install python3-pip --> to install python3 
